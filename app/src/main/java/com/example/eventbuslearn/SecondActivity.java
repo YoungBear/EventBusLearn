@@ -26,7 +26,8 @@ public class SecondActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_send_event)
     public void onViewClicked() {
-        EventBus.getDefault().post(new MessageEvent(getString(R.string.message_welcome)));
+        EventBus.getDefault().postSticky(new MessageEvent(
+                getString(R.string.message_sticky)));
         finish();
     }
 }

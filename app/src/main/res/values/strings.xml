@@ -8,4 +8,5 @@
     <string name="second_activity_name">SecondActivity</string>
     <string name="send_event">发送事件</string>
     <string name="message_welcome">欢迎关注刘望舒的博客</string>
+    <string name="message_sticky">粘性事件</string>
 </resources>

@@ -44,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
         mTvMessage.setText(messageEvent.getMessage());
     }
 
+    @Subscribe(threadMode = ThreadMode.POSTING, sticky = true)
+    public void onMoonStickyEvent(MessageEvent messageEvent) {
+        mTvMessage.setText(messageEvent.getMessage());
+    }
+
     @OnClick({R.id.btn_message, R.id.btn_subscription})
     public void onViewClicked(View view) {
         switch (view.getId()) {
